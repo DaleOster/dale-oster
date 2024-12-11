@@ -1,0 +1,90 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Times New Roman', serif;
+}
+
+#headshot {
+    border-radius: 50%;
+}
+
+.display-4 {
+    margin-top: 10px;
+}
+
+#mainContent h2, .leaderboard {
+    margin-top: 50px;
+}
+
+#mainContent h4 {
+    margin-top: 25px;
+}
+
+.table {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#thumbnail-and-play-button {
+    position: relative;
+    display: inline-block;
+}
+
+#thumbnail {
+    width: 100%;
+}
+
+#play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    #thumbnail-and-play-button {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    #thumbnail-and-play-button {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    #thumbnail-and-play-button {
+        width: 50%;
+        height: auto;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}

@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main>
+    <section class="text-center">
+        <img src="~/Images/Headshot.jpg" width="321px" height="416.5px" alt="Photo of a man in a suit with a slight smile" id="headshot" />
+        <h1 class="display-4">Dale E. Oster Jr.</h1>
+        <p><em>Software Engineer Whose Passion Is Crafting Accessible Gaming Experiences through Innovation and Empathy</em></p>
+        <a href="~/PDFs/MCP Certificate.pdf" target="_blank"><img src="~/Images/MCP Logo.svg" width="250px" height="250px" alt="Microsoft Certified Professional logo"></a>
+        <h2>Connect with Me</h2>
+        <div>
+            <a href="https://www.linkedin.com/in/dale-oster-956325144" target="_blank"><img src="~/Images/LinkedIn.png" width="55px" height="45px" alt="LinkedIn logo" /></a>
+            <a href="mailto:daleoster@outlook.com"><img src="~/Images/E-mail.png" width="55px" height="45px" alt="E-mail envelope" /></a>
+        </div>
+    </section>
+    <section id="mainContent">
+        <h2>Certifications</h2>
+        <table class="table">
+            <tr>
+                <th>Issuer</th>
+                <th>Certification</th>
+                <th>Certificate Link</th>
+            </tr>
+            <tr>
+                <td class="align-middle">Microsoft</td>
+                <td class="align-middle">Microsoft Certified Professional</td>
+                <td class="align-middle"><a href="~/PDFs/MCP Certificate.pdf" target="_blank">View Certificate</a></td>
+            </tr>
+            <tr>
+                <td class="align-middle">Microsoft</td>
+                <td class="align-middle">HTML5 Application Development Fundamentals</td>
+                <td class="align-middle"><a href="~/PDFs/Development Certificate.pdf" target="_blank">View Certificate</a></td>
+            </tr>
+            <tr>
+                <td class="align-middle">Microsoft</td>
+                <td class="align-middle">Database Fundamentals</td>
+                <td class="align-middle"><a href="~/PDFs/Database Certificate.pdf" target="_blank">View Certificate</a></td>
+            </tr>
+            <tr>
+                <td class="align-middle">TrueCoders</td>
+                <td class="align-middle">Full-Stack .NET Software Engineering</td>
+                <td class="align-middle"><a href="~/PDFs/TrueCoders Certificate.pdf" target="_blank">View Certificate</a></td>
+            </tr>
+        </table>
+        <h2>Education</h2>
+        <h4>TrueCoders | Advanced Technical Training | February 2024</h4>
+        <p>The TrueCoders training program is comprised of project and lecture-based training curriculum that aims to fill the growing need for software development professionals. Several projects foster collaboration in a group setting, involving multiple technologies, including database connectivity with CRUD operations, as well as API integrations.</p>
+        <ul>
+            <li>Over 300 hours of intensive, project-based training in .NET Core and other technical skills, including C#, ASP.NET MVC, SQL, JavaScript, HTML, CSS, and Git.</li>
+            <li>Problem-solving and collaboration skills were developed through both independent and group projects.</li>
+            <li>Projects were tracked using Git and GitHub for source control.</li>
+        </ul>
+        <h4>San Antonio College | Associate of Science | May 2021</h4>
+        <p>During my collegiate journey, I delved deeply into the realm of Computer Science, with a keen focus on programming. My academic pursuits were anchored in a comprehensive study of Java, a language that not only sharpened my technical skills but also expanded my understanding of Object-Oriented Programming (OOP) concepts. This rigorous exploration of OOP principles has equipped me with a robust foundation for developing scalable and efficient software solutions.</p>
+        <h2>Projects</h2>
+        <h4>Codewars</h4>
+        <p>Codewars is an excellent platform for improving coding skills through interactive challenges, making it an excellent resource for a website focused on programming education. It also fosters a community of developers, encouraging collaboration and knowledge sharing.</p>
+        <p>Click here to view my <a href="https://www.codewars.com/users/DaleOster" target="_blank">Codewars profile</a>.</p>
+        <h4>Ship, Captain, and Crew — C# | SQL Server | Azure | Dapper</h4>
+        <p>This C# console application is a dice game that utilizes the Dapper and Microsoft.Data.SqlClient NuGet packages to integrate a SQL Server database hosted on Azure. CRUD operations allow for persistent stat tracking and leaderboard functionality.</p>
+        <ul>
+            <li>Created and host a database on Azure that stores users and their respective stats in multiple tables.</li>
+            <li>Integrated Dapper for efficient and high-performance data access, optimizing database interactions and query executions.</li>
+            <li>Full CRUD (create, read, update, and delete) operations are supported, allowing users to create new accounts, reset their stats, view leaderboards, and delete accounts.</li>
+            <li>Utilized C# for the program logic and user interface.</li>
+            <li>Logic has been implemented to allow for AI players.</li>
+        </ul>
+        <p>You can view a video walkthrough of this project by clicking on the thumbnail below.</p>
+        <div id="thumbnail-and-play-button">
+            <a href="https://1drv.ms/v/s!ArGuVDdMYi9Mgu1l5mR_J1NYOFl93A?e=Uj7N9M" target="_blank">
+                <img id="thumbnail" src="~/Images/Game Icons/Ship, Captain, and Crew Icon.png" alt="Video thumbnail - a ship's wheel encircling a pirate ship. A banner at the bottom reads, 'SHIP, CAPTAIN, CREW.'" width="500" height="300" />
+                <img id="play-button" src="~/Images/Play.png" alt="Play button" width="100" height="100" />
+            </a>
+        </div>
+        <p>You can click here to view the <a href="https://github.com/DaleOster/ship-captain-and-crew" target="_blank">source code</a>.</p>
+    </section>
+</main>
