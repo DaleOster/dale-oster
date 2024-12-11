@@ -1,0 +1,36 @@
+﻿@model IEnumerable<User>
+<main>
+    <h2>Leaderboards - Ship, Captain, and Crew</h2>
+    <div class="leaderboard">
+        <h4>Most Games Won</h4>
+        <table class="table">
+            <tr>
+                <th>Username</th>
+                <th>Games Won</th>
+            </tr>
+            @foreach (var user in @Model.OrderByDescending(u => u.GamesWon).ToList())
+            {
+                <tr>
+                    <td class="align-middle">@user.Username</td>
+                    <td class="align-middle">@user.GamesWon</td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="leaderboard">
+        <h4>Most Treasure Collected</h4>
+        <table class="table">
+            <tr>
+                <th>Username</th>
+                <th>Treasure Collected</th>
+            </tr>
+            @foreach (var user in @Model.OrderByDescending(u => u.AllTimeTreasure).ToList())
+            {
+                <tr>
+                    <td class="align-middle">@user.Username</td>
+                    <td class="align-middle">@user.AllTimeTreasure</td>
+                </tr>
+            }
+        </table>
+    </div>
+</main>
